@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "canvas customization";
+  grid-template-columns: auto minmax(20em, 30em);
+  grid-template-rows: 6em auto;
+}
+
+.headerContainer {
+  grid-area: header;
+  background-color: #d8d8d8;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 1em;
+
+  .headerTitle {
+    color: #333333;
+    font-size: 2em;
+  }
+  .headerIcon {
+    color: black;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+  }
+}
+
+.canvasContainer {
+  grid-area: canvas;
+  position: relative;
+  overflow: hidden;
+
+  canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.customizationContainer {
+  grid-area: customization;
+  background-color: white;
+
+  .customizationHeader {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    .title {
+      color: white;
+      font-family: sans-serif;
+      margin: 1em 0 1em 1em;
+      font-family: 1em;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0 1em;
+      display: block;
+      height: 100%;
+      border: 1px solid #979797;
+      box-sizing: border-box;
+
+      font-family: 1em;
+      background-color: #d8d8d8;
+    }
+  }
+}
