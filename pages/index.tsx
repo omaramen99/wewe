@@ -10,7 +10,8 @@ export default function Page() {
     <BoatCustomizator
       config={{
         envMapPath: "./env_map.exr",
-        modelPath: "https://download2273.mediafire.com/oosvjtebo6dg/11nfs7tv8r0662y/boat.glb",
+        modelPath: "https://download2273.mediafire.com/jrzw4pl39gjg/11nfs7tv8r0662y/boat.glb",
+                    
         mapPath: "./base_color.png",
         occlusionRoughnessMetallicMapPath: "./map.jpg",
         transparentParts: {
